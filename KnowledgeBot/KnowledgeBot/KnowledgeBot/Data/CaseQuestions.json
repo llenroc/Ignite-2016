@@ -1,0 +1,37 @@
+﻿{
+  "type": "object",
+  "required": [
+    "CreateCase",
+    "Name",
+    "Phone",
+    "Email",
+    "Title"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I do not understand \"{0}\".", "Try again, I don't understand \"{0}\"." ]
+    }
+  },
+  "properties": {
+    "CreateCase": {
+      "Prompt": { "Patterns": [ "Sorry I can't help with that, would you like to log a case? {||}" ] },
+      "type": "boolean"
+    },
+    "Name": {
+      "Prompt": { "Patterns": [ "What's your name?" ] },
+      "type": "string"
+    },
+    "Email": {
+      "Prompt": { "Patterns": [ "What's your email address?" ] },
+      "type": "string"
+    },
+     "Phone": {
+      "Prompt": { "Patterns": [ "And your phone number?" ] },
+      "type": "string"
+    },
+    "Title": {
+      "Prompt": { "Patterns": [ "What is the problem you are having?" ] },
+      "type": "string"
+    }
+  }
+}

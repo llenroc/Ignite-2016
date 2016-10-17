@@ -1,0 +1,56 @@
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Bot Application1.dll.config
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Bot Application1.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Bot Application1.pdb
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Autofac.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Chronic.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Builder.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Builder.FormFlow.Json.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Connector.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.CSharp.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.Scripting.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Newtonsoft.Json.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.AppContext.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Collections.Immutable.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Diagnostics.StackTrace.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.IO.FileSystem.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.IO.FileSystem.Primitives.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Net.Http.Formatting.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Reflection.Metadata.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Web.Http.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Web.Http.WebHost.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Autofac.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Builder.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Builder.FormFlow.Json.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Bot.Connector.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.CSharp.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.CSharp.Scripting.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.CodeAnalysis.Scripting.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\Newtonsoft.Json.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Collections.Immutable.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Net.Http.Formatting.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Reflection.Metadata.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Web.Http.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\System.Web.Http.WebHost.xml
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\obj\Release\Bot Application1.dll
+C:\GitHub\Ignite-2016\KnowledgeBot\KnowledgeBot\KnowledgeBot\obj\Release\Bot Application1.pdb
