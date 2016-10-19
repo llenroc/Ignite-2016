@@ -42,7 +42,7 @@ namespace CRM_Bot.Logic
                     (
                         ActionTypes.ImBack,
                         "Last Order",
-                        value: "Last Order"
+                        value: "Sales Trend for Contoso Mechanics"
                     ),
                     new CardAction
                     (
@@ -54,7 +54,7 @@ namespace CRM_Bot.Logic
                     (
                         ActionTypes.ImBack,
                         "Key Contacts",
-                        value: "Key Contacts"
+                        value: "Key Contacts for Contoso Mechanics"
                     )
                 }
             };

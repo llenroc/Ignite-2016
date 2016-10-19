@@ -86,6 +86,15 @@ namespace CRM_Bot.Controllers
             return heroCard.ToAttachment();
         }
 
-        
+        [LuisIntent("KeyContacts")]
+        public async Task KeyContactsDialogue(IDialogContext context, LuisResult result)
+        {
+            var message = context.MakeMessage();
+            message.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            message.Attachments = Logic.CRMLookup.GetKeyContacts(result.Entities[0].Entity); 
+            await context.PostAsync(message);
+
+            context.Wait(this.MessageReceived);
+        }
     }
 }
