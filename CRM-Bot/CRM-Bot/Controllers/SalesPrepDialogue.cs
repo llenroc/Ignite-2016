@@ -41,8 +41,9 @@ namespace CRM_Bot.Controllers
         [LuisIntent("Prepare")]
         public async Task PrepareDialogue(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Hi! :8");
-            
+            await context.PostAsync("Give me a sec.. checking your calendar appointments");
+
+            await context.PostAsync(Logic.O356CalendarLookup.O356FindAppointment());
             context.Wait(this.MessageReceived);
         }
 
