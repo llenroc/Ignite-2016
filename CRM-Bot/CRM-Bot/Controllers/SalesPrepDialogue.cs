@@ -38,6 +38,14 @@ namespace CRM_Bot.Controllers
             context.Wait(this.MessageReceived);
         }
 
+        [LuisIntent("Prepare")]
+        public async Task PrepareDialogue(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync("Hi! :8");
+            
+            context.Wait(this.MessageReceived);
+        }
+
         private static Attachment GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
@@ -49,10 +57,10 @@ namespace CRM_Bot.Controllers
                 Buttons = new List<CardAction>
                 {
                     new CardAction
-                    (
-                        ActionTypes.PostBack, 
+                    ( 
+                        ActionTypes.ImBack,
                         "Prepare", 
-                        value: "time to prepare"
+                        value: "Prepare"
                     ),
                     new CardAction
                     (
