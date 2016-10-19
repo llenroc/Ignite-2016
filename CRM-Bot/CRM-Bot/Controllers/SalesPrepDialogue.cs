@@ -32,18 +32,23 @@ namespace CRM_Bot.Controllers
             var message = context.MakeMessage();
             message.Attachments = new List<Attachment>();
             message.Attachments.Add(GetWelcomeHeroCard());
-
-            //await context.PostAsync("Hi! Try asking me things like 'search hotels in Seattle', 'search hotels near LAX airport' or 'show me the reviews of The Bot Resort'");
             await context.PostAsync(message);
+
             context.Wait(this.MessageReceived);
         }
 
         [LuisIntent("Prepare")]
         public async Task PrepareDialogue(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Give me a sec.. checking your calendar appointments");
+            await context.PostAsync("Give me a sec.. checking your O365 calendar.");
 
             await context.PostAsync(Logic.O356CalendarLookup.O356FindAppointment());
+
+            var companyBio = context.MakeMessage();
+            companyBio.Attachments = new List<Attachment>();
+            companyBio.Attachments.Add(Logic.O356CalendarLookup.GetCompanyCard());
+            await context.PostAsync(companyBio);
+
             context.Wait(this.MessageReceived);
         }
 
@@ -51,34 +56,36 @@ namespace CRM_Bot.Controllers
         {
             var heroCard = new HeroCard
             {
-                Title = "Sales Assistant",
+                Title = "Parts Unlimited Sales Assistant",
                 //Subtitle = "Your bots — wherever your users are talking",
-                Text = "Ask me about your accounts!",
+                Text = "Ask me about your accounts! I can help you log information and prepare for a meeting  with your customer by looking through Dynamics CRM and O365!",
                 Images = new List<CardImage> { new CardImage("https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg") },
                 Buttons = new List<CardAction>
                 {
                     new CardAction
-                    ( 
+                    (
                         ActionTypes.ImBack,
-                        "Prepare", 
+                        "Prepare",
                         value: "Prepare"
                     ),
                     new CardAction
                     (
-                        ActionTypes.OpenUrl, 
-                        "Log", 
-                        value: "https://docs.botframework.com/en-us/"
+                        ActionTypes.ImBack,
+                        "Log",
+                        value: "Log"
                     ),
                     new CardAction
                     (
-                        ActionTypes.OpenUrl, 
-                        "Help", 
-                        value: "https://docs.botframework.com/en-us/"
+                        ActionTypes.ImBack,
+                        "Sign-In",
+                        value: "Sign-In"
                     )
                 }
             };
 
             return heroCard.ToAttachment();
         }
+
+        
     }
 }
