@@ -1,2 +1,2 @@
 [config]
-project = CRM-Bot/CRM-Bot.sln
+project = CRM-Bot/CRM-Bot/CRM-Bot.csproj
