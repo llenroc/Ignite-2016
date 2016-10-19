@@ -7,7 +7,7 @@ namespace CRM_Bot.Logic
 {
     public class CRMLookup
     {
-        public string CRMLookupDialogue(string tag)
+        public static string CRMLookupDialogue(string tag)
         {
             switch (tag)
             {
@@ -24,7 +24,7 @@ namespace CRM_Bot.Logic
                     return "";
 
                 default:
-                    return "";
+                    return null;
             }
         }
     }

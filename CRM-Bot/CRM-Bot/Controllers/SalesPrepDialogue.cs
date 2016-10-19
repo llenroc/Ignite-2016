@@ -19,7 +19,7 @@ namespace CRM_Bot.Controllers
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";
+            string message = Logic.CRMLookup.CRMLookupDialogue(result.Query.ToString()) ?? $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";
 
             await context.PostAsync(message);
 
