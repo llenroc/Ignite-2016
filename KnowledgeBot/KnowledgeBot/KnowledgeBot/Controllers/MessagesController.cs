@@ -45,6 +45,7 @@ namespace KnowledgeBot
                 // TECHREADY23 MSDY315 - PART ONE
                 //**Finding knowledge through Azure Search **
 
+
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 
                 bool sentReply = false;
