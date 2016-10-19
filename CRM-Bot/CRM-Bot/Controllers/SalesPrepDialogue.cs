@@ -71,7 +71,7 @@ namespace CRM_Bot.Controllers
                     new CardAction
                     (
                         ActionTypes.ImBack,
-                        "Log",
+                        "Log Info",
                         value: "Log"
                     ),
                     new CardAction
@@ -92,6 +92,28 @@ namespace CRM_Bot.Controllers
             var message = context.MakeMessage();
             message.AttachmentLayout = AttachmentLayoutTypes.Carousel;
             message.Attachments = Logic.CRMLookup.GetKeyContacts(result.Entities[0].Entity); 
+            await context.PostAsync(message);
+
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("SalesTrend")]
+        public async Task SalesTrendDialogue(IDialogContext context, LuisResult result)
+        {
+            var message = context.MakeMessage();
+            message.Attachments = new List<Attachment>();
+            message.Attachments.Add(Logic.CRMLookup.GetSalesTrend(result.Entities[0].Entity));
+            await context.PostAsync(message);
+
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("SignIn")]
+        public async Task SignInDialogue(IDialogContext context, LuisResult result)
+        {
+            var message = context.MakeMessage();
+            message.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            message.Attachments = Logic.CRMLookup.GetKeyContacts(result.Entities[0].Entity);
             await context.PostAsync(message);
 
             context.Wait(this.MessageReceived);

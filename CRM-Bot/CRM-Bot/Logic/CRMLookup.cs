@@ -30,7 +30,7 @@ namespace CRM_Bot.Logic
             }
         }
 
-        public static IList<Attachment> GetKeyContacts(string companyName)
+        public static IList<Attachment> GetKeyContacts(string accountName)
         {
 
             Task task = Task.Delay(2000);
@@ -77,6 +77,18 @@ namespace CRM_Bot.Logic
             };
 
             return heroCard.ToAttachment();
+        }
+
+        public static Attachment GetSalesTrend(string accountName)
+        {
+            var attachment = new Attachment()
+            {
+                ContentUrl = "https://docs.botframework.com/en-us/images/faq-overview/botframework_overview_july.png",
+                ContentType = "image/png",
+                Name = "BotFrameworkOverview.png"
+            };
+
+            return attachment;
         }
 
     }

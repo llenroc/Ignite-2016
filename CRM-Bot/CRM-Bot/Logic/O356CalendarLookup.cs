@@ -41,7 +41,7 @@ namespace CRM_Bot.Logic
                     new CardAction
                     (
                         ActionTypes.ImBack,
-                        "Last Order",
+                        "Sales Trend",
                         value: "Sales Trend for Contoso Mechanics"
                     ),
                     new CardAction
