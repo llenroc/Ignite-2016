@@ -19,7 +19,7 @@ namespace CRM_Bot.Controllers
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = Logic.CRMLookup.CRMLookupDialogue(result.Query.ToString()) ?? $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";
+            string message = $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";
 
             await context.PostAsync(message);
 
@@ -40,7 +40,7 @@ namespace CRM_Bot.Controllers
         [LuisIntent("Prepare")]
         public async Task PrepareDialogue(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Give me a sec.. checking your O365 calendar.");
+            await context.PostAsync("Give me a sec.. checking your Office 365 calendar.");
 
             await context.PostAsync(Logic.O356CalendarLookup.O356FindAppointment());
 
@@ -57,9 +57,8 @@ namespace CRM_Bot.Controllers
             var heroCard = new HeroCard
             {
                 Title = "Parts Unlimited Sales Assistant",
-                //Subtitle = "Your bots — wherever your users are talking",
-                Text = "Ask me about your accounts! I can help you log information and prepare for a meeting  with your customer by looking through Dynamics CRM and O365!",
-                Images = new List<CardImage> { new CardImage("https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg") },
+                Text = "Ask me about your accounts! I can help you log information and prepare for a meeting  with your customer by looking through Dynamics CRM and Office 365!",
+                Images = new List<CardImage> { new CardImage("https://dxnz.blob.core.windows.net/share/Ignite-2016/logo.png") },
                 Buttons = new List<CardAction>
                 {
                     new CardAction
@@ -112,11 +111,23 @@ namespace CRM_Bot.Controllers
         public async Task SignInDialogue(IDialogContext context, LuisResult result)
         {
             var message = context.MakeMessage();
-            message.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-            message.Attachments = Logic.CRMLookup.GetKeyContacts(result.Entities[0].Entity);
+            message.Attachments.Add(GetSigninCard());
             await context.PostAsync(message);
 
+            await context.PostAsync("Login Successful! Welcome David!");
+
             context.Wait(this.MessageReceived);
+        }
+
+        private static Attachment GetSigninCard()
+        {
+            var signinCard = new SigninCard
+            {
+                Text = "Parts Unlimited Sign-in Card",
+                Buttons = new List<CardAction> { new CardAction(ActionTypes.Signin, "Sign-in", value: "https://login.microsoftonline.com/") }
+            };
+
+            return signinCard.ToAttachment();
         }
     }
 }
